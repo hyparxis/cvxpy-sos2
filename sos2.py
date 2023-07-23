@@ -31,7 +31,7 @@ def SOS2(n):
             for s in range(n - 1):
                 # Loop over knot points
                 for k in range(n):
-                    # Segment contains knot point and g_ib is in segment's 
+                    # Segment contains knot point and g_i == b is in segment's 
                     # gray code parameterization
                     if segment_contains_knotpoint(s, k) and g[s, i] == b:
                         k_not_in_gib -= {k}

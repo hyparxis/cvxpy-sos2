@@ -1,2 +1,3 @@
 # cvxpy-sos2
-An implementation of the Special Ordered Set of Type 2 constraint in pure cvxpy
+An implementation of the Special Ordered Set of Type 2 (SOS2) mixed integer constraint as described in the paper _[Modeling disjunctive constraints with a logarithmic number
+of binary variables and constraints](https://juan-pablo-vielma.github.io/publications/Modeling-Disjunctive-Constraints-FULL.pdf)_. SOS2 constraints are often used to model piecewise linear approximations to nonlinear constraints. Most mixed integer solvers provide their own way of adding SOS2 constraints which are probably more efficient but this code provides a solver agnostic way of specifying the constraint through cvxpy that's still reasonably efficient (only adds log2(n) binary variables and constraints). I also couldn't find any existing straight-forward open source implementations of this method so hopefully this will help someone in the future who's interested in seeing a simple implementation. 
